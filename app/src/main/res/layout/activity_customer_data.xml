@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:background="@drawable/bg_gradient"
+    tools:context=".Customer_Data">
+
+
+    <ImageView
+        android:layout_marginTop="30dp"
+        android:layout_width="302dp"
+        android:layout_height="56dp"
+        android:background="@drawable/customer_data1" />
+
+
+
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name :"
+        android:textStyle="bold"
+        android:layout_marginTop="40dp"
+        android:layout_gravity="left"
+        android:layout_marginLeft="50dp"
+        android:textColor="@color/white"
+
+        android:textSize="20dp" />
+    <com.google.android.material.textfield.TextInputLayout
+
+        android:id="@+id/name"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        app:startIconDrawable="@drawable/baseline_person_24"
+
+
+        app:counterEnabled="true"
+        app:counterMaxLength="40"
+        app:endIconMode="clear_text"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/c_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_view"
+            android:hint="Name"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <TextView
+        android:id="@+id/tv_mob"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:layout_marginLeft="50dp"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/white"
+        android:text="Phone :"
+        android:textSize="20dp" />
+
+    <com.google.android.material.textfield.TextInputLayout
+
+        android:id="@+id/number"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        app:startIconDrawable="@drawable/baseline_phone_24"
+        android:hint="Number"
+
+        app:counterEnabled="true"
+        app:counterMaxLength="10"
+        app:endIconMode="clear_text"
+        app:prefixText="+91"
+
+        app:prefixTextColor="@color/black"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/c_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:textColor="@color/black"
+            android:background="@drawable/rounded_view"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/tv_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="20dp"
+        android:text="Address :"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:textSize="20dp" />
+    <com.google.android.material.textfield.TextInputLayout
+
+    android:id="@+id/address"
+    android:layout_width="350dp"
+    android:layout_height="wrap_content"
+    app:startIconDrawable="@drawable/baseline_location_city_24"
+    android:hint="Address"
+
+    app:counterEnabled="true"
+    app:counterMaxLength="200"
+    app:endIconMode="clear_text"
+
+    >
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/c_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:background="@drawable/rounded_view"
+        />
+</com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/Next"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/white"
+        android:layout_marginTop="40dp"
+        android:text="Next"
+        android:textColor="#ff2c03" />
+</LinearLayout>

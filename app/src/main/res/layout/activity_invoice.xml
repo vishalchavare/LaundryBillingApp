@@ -1,0 +1,1149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#E8E6E6"
+    android:padding="10dp"
+    android:gravity="center_horizontal"
+    tools:context=".Invoice">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="60dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_marginTop="10dp"
+        android:text="BILL (Invoice)"
+        android:fontFamily="@font/springsnowstorm"
+        android:layout_gravity="center_horizontal"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:text="_________________________________________"
+        android:layout_marginTop="-25dp"
+        />
+
+
+    <LinearLayout
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.8"
+            android:text="  Name : "
+            android:textColor="@color/black"
+            android:fontFamily="@font/springsnowstorm"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/c_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="15dp"
+            android:layout_weight="1.8"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Date : "
+            android:fontFamily="@font/springsnowstorm"
+            android:textSize="25dp"
+            android:layout_weight="0.7"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/today_date"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="15dp"
+            android:layout_weight="1"
+            android:textColor="@color/black" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="8"
+        android:background="@drawable/rounded_white"
+        android:scrollbarAlwaysDrawVerticalTrack="true">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_cream">
+
+            <TableRow android:background="@drawable/rounded_color1">
+
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="6"
+                    android:padding="10sp"
+                    android:text="Name of Item"
+                    android:fontFamily="@font/springsnowstorm"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+
+                    />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:padding="10sp"
+                    android:text="Rate"
+                    android:fontFamily="@font/springsnowstorm"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+
+                    />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:padding="10sp"
+                    android:text="Qty"
+                    android:fontFamily="@font/springsnowstorm"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+
+                    />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:padding="10sp"
+                    android:text="Total"
+                    android:fontFamily="@font/springsnowstorm"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+
+                    />
+
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/normal_iron_tr"
+                android:visibility="gone"
+                >
+
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="6"
+                    android:padding="10sp"
+                    android:text="Normal Iron"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+
+                    />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:padding="10sp"
+                    android:text="8"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+
+                    />
+
+                <TextView
+                    android:id="@+id/i_nor_qty"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:padding="10sp"
+                    android:text="0"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+
+                    />
+
+                <TextView
+                    android:id="@+id/iron_nor_total"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:padding="10sp"
+                    android:text="0"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+
+                    />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/iron_lk_tr"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="6"
+                    android:padding="10sp"
+                    android:text="Long Kurta Iron"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+
+                    />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:padding="10sp"
+                    android:text="10"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+
+                    />
+
+                <TextView
+                    android:id="@+id/i_lk_qty"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:padding="10sp"
+                    android:text="0"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+
+                    />
+
+                <TextView
+                    android:id="@+id/iron_lk_total"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:padding="10sp"
+                    android:text="0"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+
+                    />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/iron_sari_tr"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="6"
+                    android:padding="10sp"
+                    android:text="Saree Iron"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+
+                    />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:padding="10sp"
+                    android:text="60"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+
+                    />
+
+                <TextView
+                    android:id="@+id/i_sari_qty"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:padding="10sp"
+                    android:text="0"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+
+                    />
+
+                <TextView
+                    android:id="@+id/iron_sari_total"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:padding="10sp"
+                    android:text="0"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+
+                    />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/iron_blazer_tr"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="6"
+                    android:padding="10sp"
+                    android:text="Blazer Iron"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+
+                    />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:padding="10sp"
+                    android:text="80"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+
+                    />
+
+                <TextView
+                    android:id="@+id/i_blazer_qty"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:padding="10sp"
+                    android:text="0"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+
+                    />
+
+                <TextView
+                    android:id="@+id/iron_blazer_total"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:padding="10sp"
+                    android:text="0"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+
+                    />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/normal_str_iron_tr"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="6"
+                    android:gravity="center"
+                    android:padding="10sp"
+                    android:text="Normal Steam Iron"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+
+                    />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:padding="10sp"
+                    android:text="10"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+
+                    />
+
+                <TextView
+                    android:id="@+id/str_i_nor_qty"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:padding="10sp"
+                    android:text="0"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+
+                    />
+
+                <TextView
+                    android:id="@+id/str_iron_total"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:padding="10sp"
+                    android:text="0"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+
+                    />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/wash_only_tr"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="6"
+                    android:padding="10sp"
+                    android:text="Wash Only"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+
+                    />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:padding="10sp"
+                    android:text="59"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+
+                    />
+
+                <TextView
+                    android:id="@+id/w_only_qty"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:padding="10sp"
+                    android:text="0"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+
+                    />
+
+                <TextView
+                    android:id="@+id/wash_only_total"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:padding="10sp"
+                    android:text="0"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+
+                    />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/wash_iron_tr"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="6"
+                    android:padding="10sp"
+                    android:text="Wash+Iron"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+
+                    />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:padding="10sp"
+                    android:text="89"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+
+                    />
+
+                <TextView
+                    android:id="@+id/w_iron_qty"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:padding="10sp"
+                    android:text="0"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+
+                    />
+
+                <TextView
+                    android:id="@+id/wash_iron_total"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:padding="10sp"
+                    android:text="0"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+
+                    />
+            </TableRow>
+
+            <TableRow android:visibility="gone">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="6"
+                    android:gravity="center"
+                    android:padding="10sp"
+                    android:text="Express : Only Wash"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+
+                    />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:padding="10sp"
+                    android:text="7"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+
+                    />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:padding="10sp"
+                    android:text="4"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+
+                    />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:padding="10sp"
+                    android:text="28"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+
+                    />
+            </TableRow>
+
+            <TableRow android:visibility="gone">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="6"
+                    android:gravity="center"
+                    android:padding="10sp"
+                    android:text="Express : Wash + Iron"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+
+                    />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:padding="10sp"
+                    android:text="7"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+
+                    />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:padding="10sp"
+                    android:text="4"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+
+                    />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:padding="10sp"
+                    android:text="28"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+
+                    />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/shirt_dc_tr"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="6"
+                    android:padding="10sp"
+                    android:text="Shirt DC"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+
+                    />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:padding="10sp"
+                    android:text="70"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+
+                    />
+
+                <TextView
+                    android:id="@+id/shirt_dc_qty"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:padding="10sp"
+                    android:text="0"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+
+                    />
+
+                <TextView
+                    android:id="@+id/shirt_dc_total"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:padding="10sp"
+                    android:text="0"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+
+                    />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/trouser_dc_tr"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="6"
+                    android:padding="10sp"
+                    android:text="Trouser DC"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+
+                    />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:padding="10sp"
+                    android:text="70"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+
+                    />
+
+                <TextView
+                    android:id="@+id/trouser_dc_qty"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:padding="10sp"
+                    android:text="0"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+
+                    />
+
+                <TextView
+                    android:id="@+id/trouser_dc_total"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:padding="10sp"
+                    android:text="0"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+
+                    />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/kurta_dc_tr"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="6"
+                    android:padding="10sp"
+                    android:text="Kurta DC"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+
+                    />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:padding="10sp"
+                    android:text="100"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+
+                    />
+
+                <TextView
+                    android:id="@+id/kurta_dc_qty"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:padding="10sp"
+                    android:text="0"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+
+                    />
+
+                <TextView
+                    android:id="@+id/kurta_dc_total"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:padding="10sp"
+                    android:text="0"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+
+                    />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/shoes_cleaning_tr"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="6"
+                    android:padding="10sp"
+                    android:text="Shoes Cleaning"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+
+                    />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:padding="10sp"
+                    android:text="200"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+
+                    />
+
+                <TextView
+                    android:id="@+id/shoes_clean_qty"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:padding="10sp"
+                    android:text="0"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+
+                    />
+
+                <TextView
+                    android:id="@+id/shoes_clean_total"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:padding="10sp"
+                    android:text="0"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+
+                    />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/half_leather_tr"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="6"
+                    android:padding="10sp"
+                    android:text="Half Leather Shoes"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+
+                    />
+
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:padding="10sp"
+                    android:text="250"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+
+                    />
+
+                <TextView
+                    android:id="@+id/shoes_clean_hl_qty"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:padding="10sp"
+                    android:text="0"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+
+                    />
+
+                <TextView
+                    android:id="@+id/shoes_clean_hl_total"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:padding="10sp"
+                    android:text="0"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+
+                    />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/leather_shoes_tr"
+                android:visibility="gone"
+                >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="6"
+                    android:padding="10sp"
+                    android:text="Leather Shoes Cleaning"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+
+                    />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:padding="10sp"
+                    android:text="300"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+
+                    />
+
+                <TextView
+                    android:id="@+id/shoes_clean_l_qty"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:padding="10sp"
+                    android:text="0"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+
+                    />
+
+                <TextView
+                    android:id="@+id/shoes_clean_l_total"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:padding="10sp"
+                    android:text="0"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+
+                    />
+            </TableRow>
+
+            <TableRow android:visibility="gone">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="6"
+                    android:padding="10sp"
+                    android:text="Sofa Cleaning"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+
+                    />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:padding="10sp"
+                    android:text="0"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+
+                    />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:padding="10sp"
+                    android:text="0"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+
+                    />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:padding="10sp"
+                    android:text="0"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+
+                    />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/certain_wash_tr"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="6"
+                    android:gravity="center"
+                    android:padding="10sp"
+                    android:text="Certain Wash"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+
+                    />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:padding="10sp"
+                    android:text="0"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+
+                    />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:padding="10sp"
+                    android:text="0"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    />
+
+                <TextView
+                    android:id="@+id/certain_wash_total"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:padding="10sp"
+                    android:text="0"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+
+                    />
+            </TableRow>
+            <TableRow
+
+                >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:gravity="center"
+                    android:layout_marginTop="30dp"
+                    android:padding="10sp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/springsnowstorm"
+                    android:text="Total"
+                    android:textColor="@color/black"
+                    android:textSize="30dp"
+
+                    />
+
+                <TextView
+                    android:id="@+id/total_tv"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:gravity="right"
+                    android:layout_marginTop="30dp"
+                    android:padding="10sp"
+                    android:text="0"
+
+                    android:fontFamily="@font/springsnowstorm"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:textSize="30dp"
+
+                    />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:layout_marginTop="30dp"
+                    android:padding="10sp"
+                    android:text="rs"
+
+                    android:fontFamily="@font/springsnowstorm"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:textSize="30dp"
+
+                    />
+            </TableRow>
+
+        </TableLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:gravity="center"
+        android:layout_weight="1"
+        android:layout_height="0dp">
+
+
+    <Button
+        android:id="@+id/paid"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/orange"
+        android:text="Paid" />
+
+    <Button
+        android:id="@+id/unpaid"
+        android:layout_width="0dp"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/white"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/orange"
+        android:text="Unpaid" />
+
+</LinearLayout>
+
+</LinearLayout>

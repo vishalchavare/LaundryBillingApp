@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_gravity="center"
+    android:gravity="center_horizontal"
+    android:layout_height="500dp"
+    android:orientation="vertical"
+
+    tools:context=".Services"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="433dp"
+        android:layout_gravity="top"
+        android:background="@drawable/rounded_grey"
+        android:orientation="vertical"/>
+    <LinearLayout
+        android:gravity="center"
+        android:layout_width="377dp"
+        android:layout_height="430dp"
+        android:layout_gravity="top"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:background="@drawable/rounded_white1"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="250dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:background="#E8E6E6">
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/springsnowstorm"
+                android:text="Normal Iron"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="30dp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="120dp"
+                android:layout_height="55dp"
+                android:layout_marginLeft="18dp"
+                android:layout_gravity="center"
+                android:gravity="center_vertical"
+                android:background="@drawable/bar1"
+                >
+                <Button
+                    android:id="@+id/iron_nor_minus"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginLeft="7dp"
+                    android:onClick="iron_norMinus"
+                    android:background="@drawable/minus"
+                    android:foreground="@drawable/minus"/>
+
+                <EditText
+                    android:id="@+id/iron_nor_et"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:text="0"
+                    android:inputType="number"
+                    android:textColor="@color/white"
+                    android:textAlignment="center"
+                    android:background="@drawable/rounded_red"
+                    android:textSize="30dp"
+                    />
+
+                <Button
+                    android:id="@+id/iron_nor_plus"
+                    android:layout_width="25dp"
+                    android:layout_height="26dp"
+                    android:layout_marginLeft="05dp"
+                    android:background="@drawable/plus"
+                    android:foreground="@drawable/plus"
+                    android:onClick="iron_norPlus" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="250dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:background="#E8E6E6" >
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/springsnowstorm"
+                android:gravity="center"
+                android:text="Long Kurta"
+                android:textSize="30dp"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="120dp"
+                android:layout_height="55dp"
+                android:layout_marginLeft="18dp"
+                android:layout_gravity="center"
+                android:gravity="center_vertical"
+                android:background="@drawable/bar1"
+                >
+                <Button
+                    android:onClick="iron_lkMinus"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginLeft="7dp"
+                    android:background="@drawable/minus"
+                    android:foreground="@drawable/minus"/>
+                <EditText
+                    android:id="@+id/iron_lk_et"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:text="0"
+
+                    android:textColor="@color/white"
+                    android:textAlignment="center"
+                    android:background="@drawable/rounded_red"
+                    android:textSize="30dp"
+                    />
+                <Button
+                    android:layout_width="25dp"
+                    android:onClick="iron_lkPlus"
+                    android:layout_height="25dp"
+                    android:background="@drawable/plus"
+                    android:layout_marginLeft="05dp"
+                    android:foreground="@drawable/plus"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="250dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:background="#E8E6E6" >
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/springsnowstorm"
+                android:gravity="center"
+                android:text="Saree   Iron"
+                android:textColor="@color/black"
+                android:textSize="30dp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="120dp"
+                android:layout_height="55dp"
+                android:layout_marginLeft="18dp"
+                android:layout_gravity="center"
+                android:gravity="center_vertical"
+                android:background="@drawable/bar1"
+                >
+                <Button
+                    android:onClick="iron_sariMinus"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginLeft="7dp"
+                    android:background="@drawable/minus"
+                    android:foreground="@drawable/minus"/>
+                <EditText
+                    android:id="@+id/iron_sari_et"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:text="0"
+
+                    android:textColor="@color/white"
+                    android:textAlignment="center"
+                    android:background="@drawable/rounded_red"
+                    android:textSize="30dp"
+                    />
+                <Button
+
+                    android:layout_width="25dp"
+                    android:onClick="iron_sariPlus"
+                    android:layout_height="25dp"
+                    android:background="@drawable/plus"
+                    android:layout_marginLeft="05dp"
+                    android:foreground="@drawable/plus"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="250dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:background="#E8E6E6" >
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/springsnowstorm"
+                android:gravity="center"
+                android:text="Blazer"
+                android:textColor="@color/black"
+                android:textSize="30dp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="120dp"
+                android:layout_height="55dp"
+                android:layout_marginLeft="18dp"
+                android:layout_gravity="center"
+                android:gravity="center_vertical"
+                android:background="@drawable/bar1"
+                >
+                <Button
+                    android:onClick="iron_blazerMinus"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginLeft="7dp"
+                    android:background="@drawable/minus"
+                    android:foreground="@drawable/minus"/>
+                <EditText
+                    android:id="@+id/iron_blazer_et"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:text="0"
+
+                    android:textColor="@color/white"
+                    android:textAlignment="center"
+                    android:background="@drawable/rounded_red"
+                    android:textSize="30dp"
+                    />
+                <Button
+
+                    android:layout_width="25dp"
+                    android:onClick="iron_blazerPlus"
+                    android:layout_height="25dp"
+                    android:background="@drawable/plus"
+                    android:layout_marginLeft="05dp"
+                    android:foreground="@drawable/plus"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+    <Button
+        android:onClick="iron_total"
+        android:layout_width="100dp"
+        android:layout_height="42dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:textColor="@color/white"
+        android:layout_marginStart="100dp"
+        android:layout_marginEnd="95dp"
+        android:layout_marginBottom="10dp"
+        android:backgroundTint="@color/orange"
+
+        android:text="OK" />
+
+</RelativeLayout>

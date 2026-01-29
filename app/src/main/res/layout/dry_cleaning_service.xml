@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_gravity="center"
+    android:gravity="center_horizontal"
+    android:layout_height="500dp"
+    android:orientation="vertical"
+
+    tools:context=".Services"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="363dp"
+        android:layout_gravity="top"
+        android:background="@drawable/rounded_grey"
+        android:orientation="vertical"/>
+    <LinearLayout
+        android:gravity="center_horizontal"
+        android:layout_width="377dp"
+        android:layout_height="360dp"
+        android:layout_gravity="top"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:background="@drawable/rounded_white1"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="250dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:background="#E8E6E6">
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/springsnowstorm"
+                android:text="Shirt DC"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="30dp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="120dp"
+                android:layout_height="55dp"
+                android:layout_marginLeft="18dp"
+                android:layout_gravity="center"
+                android:gravity="center_vertical"
+                android:background="@drawable/bar1"
+                >
+                <Button
+                    android:id="@+id/shirt_dc_minus"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginLeft="7dp"
+                    android:onClick="shirt_dcMinus"
+                    android:background="@drawable/minus"
+                    android:foreground="@drawable/minus"/>
+
+                <EditText
+                    android:id="@+id/shirt_dc_et"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:text="0"
+                    android:inputType="number"
+                    android:textColor="@color/white"
+                    android:textAlignment="center"
+                    android:background="@drawable/rounded_red"
+                    android:textSize="30dp"
+                    />
+
+                <Button
+                    android:id="@+id/shirt_dc_Plus"
+                    android:layout_width="25dp"
+                    android:layout_height="26dp"
+                    android:layout_marginLeft="05dp"
+                    android:background="@drawable/plus"
+                    android:foreground="@drawable/plus"
+                    android:onClick="shirt_dcPlus" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="250dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:background="#E8E6E6">
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/springsnowstorm"
+                android:gravity="center"
+                android:text="Trouser DC"
+                android:textSize="30dp"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="120dp"
+                android:layout_height="55dp"
+                android:layout_marginLeft="18dp"
+                android:layout_gravity="center"
+                android:gravity="center_vertical"
+                android:background="@drawable/bar1"
+                >
+                <Button
+                    android:onClick="trouser_dcMinus"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginLeft="7dp"
+                    android:background="@drawable/minus"
+                    android:foreground="@drawable/minus"/>
+                <EditText
+                    android:id="@+id/trouser_dc_et"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:text="0"
+
+                    android:textColor="@color/white"
+                    android:textAlignment="center"
+                    android:background="@drawable/rounded_red"
+                    android:textSize="30dp"
+                    />
+                <Button
+                    android:layout_width="25dp"
+                    android:onClick="trouser_dcPlus"
+                    android:layout_height="25dp"
+                    android:background="@drawable/plus"
+                    android:layout_marginLeft="05dp"
+                    android:foreground="@drawable/plus"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="250dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:background="#E8E6E6" >
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/springsnowstorm"
+                android:gravity="center"
+                android:text="Kurta DC"
+                android:textSize="30dp"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="120dp"
+                android:layout_height="55dp"
+                android:layout_marginLeft="18dp"
+                android:layout_gravity="center"
+                android:gravity="center_vertical"
+                android:background="@drawable/bar1"
+                >
+                <Button
+                    android:onClick="kurta_dcMinus"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginLeft="7dp"
+                    android:background="@drawable/minus"
+                    android:foreground="@drawable/minus"/>
+                <EditText
+                    android:id="@+id/kurta_dc_et"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:text="0"
+
+                    android:textColor="@color/white"
+                    android:textAlignment="center"
+                    android:background="@drawable/rounded_red"
+                    android:textSize="30dp"
+                    />
+                <Button
+
+                    android:layout_width="25dp"
+                    android:onClick="kurta_dcPlus"
+                    android:layout_height="25dp"
+                    android:background="@drawable/plus"
+                    android:layout_marginLeft="05dp"
+                    android:foreground="@drawable/plus"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="42dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="100dp"
+        android:layout_marginEnd="95dp"
+        android:layout_marginBottom="54dp"
+        android:backgroundTint="@color/orange"
+        android:onClick="dc_total"
+        android:textColor="@color/white"
+
+        android:text="OK" />
+
+</RelativeLayout>

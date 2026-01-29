@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_gravity="center"
+    android:gravity="center_horizontal"
+    android:layout_height="200dp"
+    android:orientation="vertical"
+
+    tools:context=".Services"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="433dp"
+        android:layout_gravity="top"
+        android:background="@drawable/rounded_grey"
+        android:orientation="vertical"/>
+    <LinearLayout
+        android:gravity="center"
+        android:layout_width="377dp"
+        android:layout_height="430dp"
+        android:layout_gravity="top"
+        android:paddingBottom="20dp"
+        android:background="@drawable/rounded_white1"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Enter Weight : "
+            android:textStyle="bold"
+            android:layout_marginTop="-30dp"
+            android:textSize="30dp"
+            android:textColor="@color/black"
+            />
+        <EditText
+            android:id="@+id/wash_iron_et"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:textSize="30dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/rounded_grey"
+            android:textColor="@color/black"
+            android:inputType="numberDecimal"
+            />
+
+    </LinearLayout>
+
+
+
+
+    <Button
+        android:onClick="wash_iron_total"
+        android:layout_width="100dp"
+        android:layout_height="42dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="34dp"
+        android:textColor="@color/white"
+        android:layout_marginEnd="95dp"
+        android:backgroundTint="@color/orange"
+        android:layout_marginBottom="20dp"
+        android:text="OK" />
+
+</RelativeLayout>

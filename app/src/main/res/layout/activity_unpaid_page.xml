@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="#E8E6E6"
+    tools:context=".Unpaid_page">
+
+<LinearLayout
+    android:layout_gravity="center"
+    android:layout_width="match_parent"
+    android:layout_margin="40dp"
+    android:orientation="vertical"
+    android:background="@drawable/rounded_white"
+    android:layout_height="500dp">
+
+
+
+    <TextView
+        android:layout_marginTop="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="40dp"
+        android:gravity="center"
+        android:text="Do You Want To Send Reminder To Your Customer"
+        android:textSize="30dp"
+        android:textColor="@color/black"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/check"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+     >
+
+        <Button
+            android:id="@+id/yes"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginRight="15dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="30dp"
+            android:backgroundTint="@color/orange"
+            android:textColor="@color/white"
+            android:text="YES" />
+
+        <Button
+            android:id="@+id/no"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:textColor="@color/white"
+            android:layout_marginRight="30dp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/orange"
+            android:text="NO" />
+
+    </LinearLayout>
+</LinearLayout>
+</LinearLayout>

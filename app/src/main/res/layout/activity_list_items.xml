@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#E8E6E6">
+
+    <RelativeLayout
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="60dp"
+            android:layout_marginRight="20dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/bg_list"
+                android:alpha="0.3"
+                app:tint="#77000000" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="3dp"
+                android:layout_marginBottom="3dp"
+                android:src="@drawable/bg_list" />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/img_ser"
+            android:layout_width="120dp"
+            android:layout_height="match_parent"
+            android:padding="15dp"
+            android:src="@drawable/iron" />
+
+        <LinearLayout
+            android:layout_marginLeft="120dp"
+            android:layout_width="280dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:gravity="center_vertical"
+                android:id="@+id/tv_ser"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="Iron"
+                android:textAllCaps="true"
+                android:layout_gravity="bottom"
+                android:layout_weight="1"
+                android:textColor="#000000"
+                android:textSize="40dp"
+                android:paddingTop="30dp"
+                android:fontFamily="@font/springsnowstorm"
+                android:paddingBottom="1dp"
+                />
+
+            <TextView
+                android:id="@+id/num_ser"
+                android:text="12 Pieces"
+                android:textSize="15dp"
+                android:textColor="#595656"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_weight="1"
+                />
+
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>
