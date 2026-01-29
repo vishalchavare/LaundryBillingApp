@@ -2,9 +2,7 @@
 
 ## By
 - **Mr. Vishal D. Chavare**  
-- **Mr. Shivam S. Pawar**  
-- **Mr. Swapnil S. Ghodake**  
-- **Mr. Onkar N. Kadam**  
+ 
 
 ---
 
