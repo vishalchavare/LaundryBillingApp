@@ -1,8 +1,8 @@
 # Laundry Management App
 
 ## By
-- **Mr. Vishal D. Chavare**  
  
+- [Mr. Vishal D. Chavare](https://www.linkedin.com/in/vishal-chavare/)  
 
 ---
 
